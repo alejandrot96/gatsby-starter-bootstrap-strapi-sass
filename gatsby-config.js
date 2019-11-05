@@ -1,11 +1,28 @@
 module.exports = {
-  pathPrefix: "/gatsby-react-bootstrap-starter",
+  pathPrefix: "/gatsby-react-bootstrap-strapi-starter",
   siteMetadata: {
     title: `Gatsby React Bootstrap Starter`,
-    description: `A starter that includes react-bootstrap and react-icons, along with SASS compilation.`,
-    author: `Billy Jacoby`,
+    description: `Copy of A starter that includes react-bootstrap and react-icons, along with SASS compilation.`,
+    author: `Alejandro Tercero`,
   },
   plugins: [
+   /*
+      STRAPI READY
+    {
+      resolve: `gatsby-source-strapi`,
+      options: {
+        apiURL: `http://localhost:1337`,
+        queryLimit: 1000, // Default to 100
+        contentTypes: [`article`, `user`],
+        // Possibility to login with a strapi user, when content types are not publically available (optional).
+        loginData: {
+          identifier: "",
+          password: "",
+        },
+      },
+    }, 
+    */
+    `gatsby-plugin-transition-link`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,

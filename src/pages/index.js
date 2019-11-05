@@ -1,4 +1,5 @@
 import React from "react"
+
 import { Row, Col, Container, ListGroup } from "react-bootstrap"
 
 import Layout from "../components/layout"
@@ -7,11 +8,12 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout pageInfo={{ pageName: "index" }}>
     <SEO title="Home" keywords={[`gatsby`, `react`, `bootstrap`]} />
-    <Container className="text-center">
+    <Container className="text-center my-5">
       <Row>
         <Col>
+        <span className="h2 body-font danger-text">legacy home page</span>
           <p>
-            This is a Gatsby Starter that I frequently use to get jump started
+            This is someone else's Gatsby Starter that I frequently use to get jump started
             on quick website builds. It includes the following packages:
           </p>
         </Col>
@@ -47,6 +49,41 @@ const IndexPage = () => (
             >
               gatsby-plugin-sass
             </ListGroup.Item>
+            <ListGroup.Item
+              action
+              href="https://github.com/strapi/gatsby-source-strapi"
+              target="_blank"
+            >
+              gatsby-source-strapi (optional)
+            </ListGroup.Item>
+            <ListGroup.Item
+              action
+              href="https://www.gatsbyjs.org/packages/gatsby-background-image/"
+              target="_blank"
+            >
+              gatsby-background-image
+            </ListGroup.Item>
+            <ListGroup.Item
+              action
+              href="https://github.com/rexxars/react-markdown"
+              target="_blank"
+            >
+              react-markdown (to render strapi richtext)
+            </ListGroup.Item>
+            <ListGroup.Item
+              action
+              href="https://transitionlink.tylerbarnes.ca/docs/anilink/"
+              target="_blank"
+            >
+              AniLink (easy transition between pages)
+            </ListGroup.Item>
+            <ListGroup.Item
+              action
+              href="https://github.com/soumyadeephalder/react-multiple-image-grid"
+              target="_blank"
+            >
+              react-multiple-image-grid
+            </ListGroup.Item>
           </ListGroup>
         </Col>
       </Row>
@@ -61,6 +98,13 @@ const IndexPage = () => (
             For more documentation on these packages and how they work, please
             refer to the pages linked in the list above.
           </p>
+        </Col>
+      </Row>
+    </Container>
+    <Container fluid>
+      <Row>
+        <Col>
+
         </Col>
       </Row>
     </Container>

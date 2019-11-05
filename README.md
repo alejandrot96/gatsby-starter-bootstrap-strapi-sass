@@ -1,9 +1,12 @@
-# Gatsby React Bootstrap Starter
+# Gatsby Alejandro's Starter
 
 A GatsbyJS starter that includes
 
 - react-bootstrap
-- react-icons
 - sticky on scroll navbar
 - SASS compiler
 - basic layout
+- react-markdown
+- strapi-source
+- background image support
+- lightbox

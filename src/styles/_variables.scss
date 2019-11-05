@@ -1,1 +1,7 @@
-$color-primary: #20232a;
+@import url('https://fonts.googleapis.com/css?family=Cabin+Sketch:700|Cabin:400,700&display=swap');
+
+$color-primary: #888;
+$body-text-color: #222;
+$headings-color: #555;
+$headings-font:  'Cabin Sketch', sans-serif;
+$main-font: 'Cabin', sans-serif !default;
